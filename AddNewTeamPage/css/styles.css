@@ -1,2 +1,17 @@
-.teamForm{
+.addTeamForm{
+    margin-top: 20px;
+}
+
+.addTeamPage{
+    width: 800px;
+    margin: 0 auto;
+
+}
+
+.textareaDescription{
+    resize: none;
+}
+
+.errMsg{
+    color: red;
 }
