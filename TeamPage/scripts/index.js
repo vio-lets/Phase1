@@ -13,7 +13,7 @@ let teamDataFromAPI = {"teams":[
     {"id":9, "name":"Randy's Team", "description":"This is Randy's team. Welcome everyone"}
 ]};
 
-class Greeting extends React.Component {
+class TeamPage extends React.Component {
 
     constructor(props){
         super(props);
@@ -30,9 +30,6 @@ class Greeting extends React.Component {
     }
 
     doSearch(){
-        // this.setState({
-        //     data: teamDataFromAPI
-        // });
         alert("Search from API?");
     }
     joinTeam() {
@@ -98,14 +95,14 @@ class Greeting extends React.Component {
 
 (function(){
     ReactDOM.render(
-        <Greeting searchMethod={searchMethod}/>,
+        <TeamPage searchMethod={searchMethod}/>,
         document.getElementById("root")
     );
 })();
 
 function reRender(){
     ReactDOM.render(
-        <Greeting searchMethod={searchMethod}/>,
+        <TeamPage searchMethod={searchMethod}/>,
         document.getElementById("root")
     );
 }

@@ -1,5 +1,5 @@
 
-class Greeting extends React.Component {
+class AddTeamPage extends React.Component {
     constructor(props){
         super(props);
         this.handleFormSubmit = this.handleFormSubmit.bind(this);
@@ -58,18 +58,15 @@ class Greeting extends React.Component {
                         <input type="text" className="form-control" placeholder="Team Name" value={this.state.name} onChange={this.handleNameChange}/>
                         <h5 className="errMsg">{this.state.nameErr}</h5>
                     </div>
-
                     <div className="form-group">
                         <label>Team Description</label>
                         <textarea rows="5" className="form-control textareaDescription" placeholder="Team Description" value={this.state.description} onChange={this.handleDescriptionChange}/>
                         <h5 className="errMsg">{this.state.descriptionErr}</h5>
                     </div>
-
                     <button type="button" className="btn btn-default" onClick={this.handleFormSubmit}>Add Team</button>
                 </form>
                 <ul className="nav navbar-nav links">
                     <li><a href="../index.html">Back To Home</a></li>
-
                 </ul>
             </div>
         );
@@ -78,7 +75,7 @@ class Greeting extends React.Component {
 
 (function(){
     ReactDOM.render(
-        <Greeting />,
+        <AddTeamPage />,
         document.getElementById("root")
     );
 })();

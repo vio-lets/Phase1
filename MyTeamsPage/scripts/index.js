@@ -11,12 +11,10 @@ let teamDataFromAPI = {"teams":[
     {"id":9, "name":"Randy's Team", "description":"This is Randy's team. Welcome everyone"}
 ]};
 
-class Greeting extends React.Component {
+class MyTeamPage extends React.Component {
 
     constructor(props){
         super(props);
-        // this.doSearch = this.doSearch.bind(this);
-        // this.joinTeam = this.joinTeam.bind(this);
         this.goToDetail = this.goToDetail.bind(this);
         this.state = {
             data:teamDataFromAPI
@@ -57,7 +55,7 @@ class Greeting extends React.Component {
 
 (function(){
     ReactDOM.render(
-        <Greeting />,
+        <MyTeamPage />,
         document.getElementById("root")
     );
 })();
