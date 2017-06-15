@@ -67,6 +67,10 @@ class Greeting extends React.Component {
 
                     <button type="button" className="btn btn-default" onClick={this.handleFormSubmit}>Add Team</button>
                 </form>
+                <ul className="nav navbar-nav links">
+                    <li><a href="../index.html">Back To Home</a></li>
+
+                </ul>
             </div>
         );
     }

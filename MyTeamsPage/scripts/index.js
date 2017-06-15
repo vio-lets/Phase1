@@ -46,6 +46,10 @@ class Greeting extends React.Component {
                         )
                     })}
                 </div>
+                <ul className="nav navbar-nav links">
+                    <li><a href="../index.html">Back To Home</a></li>
+
+                </ul>
             </div>
             );
     }
