@@ -22,7 +22,7 @@ class MyTeamPage extends React.Component {
     }
 
     goToDetail(){
-        alert("go to detail page");
+        window.location = "../TeamDetailsPage/index.html";
     }
 
     render() {
@@ -46,7 +46,6 @@ class MyTeamPage extends React.Component {
                 </div>
                 <ul className="nav navbar-nav links">
                     <li><a href="../index.html">Back To Home</a></li>
-
                 </ul>
             </div>
             );

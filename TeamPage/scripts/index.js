@@ -26,7 +26,7 @@ class TeamPage extends React.Component {
     }
 
     goToDetail(){
-        alert("go to detail page");
+        window.location = "../TeamDetailsPage/index.html";
     }
 
     doSearch(){
