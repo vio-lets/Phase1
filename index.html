@@ -1,110 +1,158 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Table of Content</title>
-        <!-- Latest compiled and minified CSS -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <title>New Plan</title>
+  <script type="text/javascript" src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="./bower_components/moment/min/moment.min.js"></script>
+  <script type="text/javascript" src="./bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <link rel="stylesheet" href="./bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-        <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center">Larkyo Phase 1 Prototypes</h1>
-                    <p>
-                        Phase 1 prototyping is to create parts and demonstrate ideas. The components and pages will be independent. The underlying code should be simple, neat and tidy using the minimum set of libraries and frameworks.
-                    </p>
-                </div>
+  <link rel"stylesheet" href="./custom.css">
+  <script src="./main.js"></script>
+</head>
+
+<body>
+
+
+  <div class="container">
+    <div class="jumbotron">
+      <div class="row">
+        <div class"form-group">
+            <div class="col-md-4">
+              <label for="plan-name">Name</label>
+              <input type="text" class="form-inline" id="plan-name">
             </div>
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h5 class="panel-title">Layouts and Navigation</h5>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><a href="Layouts/Layout1/index.html">Layout idea 1</a></li>
-                                        <li class="list-group-item disabled"><a href="#">Layout idea 2</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h5 class="panel-title">Controls / Widgets</h5>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item disabled"><a href="#">Sign In</a></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h5 class="panel-title">Home Pages</h5>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><a href="HomePage/Public/public.html">Home Page (Public)</a></li>
-                                        <li class="list-group-item"><a href="HomePage/Authenticated/authenticated.html">Home Page (Authenticated)</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h5 class="panel-title">Team Pages</h5>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item disabled"><a href="#">Team Create</a></li>
-                                        <li class="list-group-item disabled"><a href="#">Team Edit</a></li>
-                                        <li class="list-group-item disabled"><a href="#">Team Detail</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h5 class="panel-title">Code Samples</h5>
-                                </div>
-                                <div class="panel-body">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><a href="CodeSamples/HelloWorldInReact/index.html">Hello World in React</a></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-8">
+               <div class="col-md-2">
+                 <label>Visibility</label>
+               </div>
+               <div class="radio">
+                 <div class="col-md-2">
+                   <label><input class="form-inline"type="radio" name="visibility">Public</label>
+                 </div>
+               </div>
+               <div class="radio">
+                 <div class="col-md-2">
+                   <label><input type="radio" name="visibility">Private</label>
+                 </div>
+               </div>
             </div>
         </div>
-    </body>
+        <div class="form-group col-md-6">
+          <label for="plan-descript">Description</label>
+          <textarea type="text" class="form-control" id="plan-descript"></textarea>
+        </div>
+        <div class="col-sm-12">
+          <div class='form-group col-sm-3'>
+             <label for="startDateTimePicker"> Start Date </label>
+             <div class='input-group date' id='startDateTimePicker'>
+                 <input type='text' class="form-control" />
+                 <span class="input-group-addon">
+                     <span class="glyphicon glyphicon-calendar"></span>
+                 </span>
+             </div>
+         </div>
+
+         <div class='form-group col-sm-3'>
+              <label for="endDateTimePicker"> End Date </label>
+              <div class='input-group date' id='endDateTimePicker'>
+                  <input type='text' class="form-control" />
+                  <span class="input-group-addon">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <!--activities-->
+      <div class="panel panel-default">
+        <!-- Default panel contents -->
+        <div class="panel-heading">Activities</div>
+          <div class="panel-body">
+            <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">+ New Activity</button>
+          </div>
+          <!-- Table -->
+          <table class="table">
+             <thead>
+               <td>Activity</td>
+               <td>Start Date</td>
+               <td>End Date</td>
+               <td>Equiptments</td>
+               <td>Actions</td>
+             </thead>
+             <tbody>
+                <td>Barbecue</td>
+                <td>1/07/2017 1:00AM</td>
+                <td>1/07/2017 4:00PM</td>
+                <td>stove</td>
+                <td><a href="">Edit</a> | <a href="">Delete</a></td>
+             </tbody>
+          </table>
+       </div>
+
+       <!--tag-->
+       <div class="row">
+         <div class="form-group">
+           <label for="planTag"> #tag </label>
+           <input type="text" id="planTag" placeholder="hiking">
+         </div>
+       </div>
+   </div>
+ </div>
+  <!-- add new activity modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Add New Activity</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="form-group">
+                <label for="activityName">Activity</label>
+                <input type="text" id="activityName">
+            </div>
+            <div class="col-sm-12">
+              <div class='form-group col-sm-3'>
+                 <label for="modalStartDateTimePicker"> Start Date </label>
+                 <div class='input-group date' id='modalStartDateTimePicker'>
+                     <input type='text' class="form-control" />
+                     <span class="input-group-addon">
+                         <span class="glyphicon glyphicon-calendar"></span>
+                     </span>
+                 </div>
+             </div>
+
+             <div class='form-group col-xs-6 col-md-3'>
+                  <label for="modalEndDateTimePicker"> End Date </label>
+                  <div class='input-group date' id='modalEndDateTimePicker'>
+                      <input type='text' class="form-control" />
+                      <span class="input-group-addon">
+                          <span class="glyphicon glyphicon-calendar"></span>
+                      </span>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="equipments">Equipments Needed</label>
+            <textarea class="form-control" id="equipments"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
 </html>
