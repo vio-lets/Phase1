@@ -1,7 +1,165 @@
 <html>
     <head>
         <title>Layout 1</title>
-        <link rel="stylesheet" type="text/css" href="styles.css">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
         <scripts src="scripts/index.js"></scripts>
     </head>
+    <div class="navbar navbar-default">
+        <div class="container-fluid">
+            <div clas="navbar-header">
+                <a class="navbar-brand" href="#">Larkyo</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="jumbotron">
+                <h1>Welcome to Larkyo!</h1>
+                <p>
+                    What do you want to do today?
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div clas="col-md-12">
+                <div class="navbar navbar-default">
+                    <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li class="active"><a href="#">My Details</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">Search</a></li>
+                            <li><a href="#">Plan</a></li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+<!--
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Party Details</h1>
+            </div>
+        </div>
+-->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="list-group">
+                            <a class="list-group-item" href="#">
+                                Time Line
+                            </a>
+                            <a class="list-group-item" href="#">
+                                User Profile
+                            </a>
+                            <a class="list-group-item active" href="#">
+                                Role Profiles
+                            </a>
+                            <a class="list-group-item" href="#">
+                                Friend List
+                            </a>
+                            <a class="list-group-item" href="#">
+                                Billing Details
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation"><a href="#">Accountant</a></li>
+                    <li role="presentation"><a href="#">Chef</a></li>
+                    <li role="presentation"><a href="#">Navigator</a></li>
+                    <li role="presentation"><a href="#">Photographer</a></li>
+                    <li role="presentation" class="active"><a class="active" href="#">Tour Guide</a></li>
+                    
+                </ul>
+                <div class="tab-content">
+                    <br/>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <form class="form-horizontal">
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Description:</label>
+                                    <div class="col-md-10">
+                                        <textarea class="form-control" rows="5" readonly>
+I am a very cheerful local who have spent many years in my beloved home country. I know the best foods and the best people in town with a good sense of humor. I know all the history around the settlement and carries with me many stories of the place passed down from my ancestors.
+                                        </textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-2 control-label">Languages:</label>
+                                    <div class="col-md-10">
+                                        <input class="form-control" type="text" value="English, Mandarin Chinese" readonly>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div role="tabpanel" class="tab-pane active" id="">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Place you know the best!</div>
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>Auckland</li>
+                                            <li>Hamilton</li>
+                                            <li>Tauranga</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div role="tabpanel" class="tab-pane active" id="">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Achievements / Notable Experiences</div>
+                                    <div class="panel-body">
+                                        <ul>
+                                            <li>2013 NZ Tour guide of the year award</li>
+                                            <li>Climbed Mt. Rangitoto once each month for a period of 14 years.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div role="tabpanel" class="tab-pane active" id="">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">Photos</div>
+                                    <div class="panel-body">
+                                        <img src="..." alt="..." class="img-thumbnail" width="150" height="100">
+                                        <img src="..." alt="..." class="img-thumbnail" width="150" height="100">
+                                        <img src="..." alt="..." class="img-thumbnail" width="150" height="100">
+                                        <img src="..." alt="..." class="img-thumbnail" width="150" height="100">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 </html>
